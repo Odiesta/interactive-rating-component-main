@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+.rating-container {
+  display: none;
+}
+
+.thankyou-container {
+  text-align: center;
+}
+
+.hide-container {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: rgb(26,33,43);
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.star {
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+
+.description h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.description p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 1.5rem;
+}
+
+.rating {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 2rem;
+}
+
+.rating ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.rating ul li {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.default-li {
+  background-color: #262F38;
+}
+
+.default-li:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.click-rate {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit button {
+  display: block;
+  background-color: hsl(25, 97%, 53%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: color .3s ease;
+  transition: background-color .3s ease;
+  width: 100%;
+}
+
+.submit button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.thanks-img p {
+  color: #97592A;
+  border-radius: 20px;
+  background-color: #262F38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 20px auto 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .thanks-img p {
+    max-width: 80%;
+  }
+
+  .rating ul li {
+    height: 2rem;
+    width: 2rem;
+  }
+}
